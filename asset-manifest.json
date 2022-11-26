@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/crackergame.github.io/static/css/main.5b1ca336.css",
+    "main.js": "/crackergame.github.io/static/js/main.5874918c.js",
+    "static/js/787.28cb0dcd.chunk.js": "/crackergame.github.io/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/crackergame.github.io/index.html",
+    "main.5b1ca336.css.map": "/crackergame.github.io/static/css/main.5b1ca336.css.map",
+    "main.5874918c.js.map": "/crackergame.github.io/static/js/main.5874918c.js.map",
+    "787.28cb0dcd.chunk.js.map": "/crackergame.github.io/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b1ca336.css",
+    "static/js/main.5874918c.js"
+  ]
+}
