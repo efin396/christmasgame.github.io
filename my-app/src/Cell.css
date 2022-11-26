@@ -1,0 +1,62 @@
+.Cell-w {
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+
+    background-color: rgb(18, 231, 231);
+
+    border: none;
+    margin: 20px;
+
+    box-shadow: 
+    0 0 22px rgb(18, 231, 231),
+    0 0 42px rgb(18, 231, 231)
+    
+
+}
+
+.Cell-b {
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+
+    background-color: rgb(231, 18, 18);
+
+    border: none;
+    margin: 20px;
+
+    box-shadow: 
+    0 0 22px rgb(231, 18, 18),
+    0 0 42px rgb(231, 18, 18)
+    
+}
+
+
+.options{   width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
+    border: none;
+    margin: 20px;
+    background-color:  rgba(135, 255, 71, 0.488);
+
+    box-shadow: 
+    0 0 22px  rgba(135, 255, 71, 0.488),
+    0 0 42px  rgba(135, 255, 71, 0.488)
+    
+
+    
+    
+}
+
+.Cell-off {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
+    border: none;
+    margin: 20px;
+    background-color: rgb(55, 55, 55);
+}
