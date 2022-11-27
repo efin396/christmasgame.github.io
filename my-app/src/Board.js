@@ -4,25 +4,17 @@ import Cell from "./Cell";
 
 
 function Board(props) {
-    //const { size, chanceLightStartsOn } = props;
 
-    // /** randomLight: returns random boolean */
-    // function randomLight(){
-    //     return Math.random() < chanceLightStartsOn;
-    // }
-
-    //create size*size matrix state, randomly setting isOn to true/false
+    //create starting matrix state
     const startGrid = [
-        ["b","b","b","b"],
+        ["r","r","r","r"],
+        ["r","+","+","r"],
         ["b","+","+","b"],
-        ["w","+","+","w"],
-        ["w","w","w","w"]
+        ["b","b","b","b"]
     ]
 
     const [ board, setBoard ] = useState({ grid: startGrid });
     
-
-    /** toggleLight: toggles a single light on/off in the state */
     const toggleLight = function(cellIndex){
         let [ cellRowIndex, cellColIndex ] = cellIndex.split("");
         cellRowIndex = parseInt(cellRowIndex);
@@ -80,7 +72,7 @@ function Board(props) {
         cellRowIndex = parseInt(cellRowIndex);
         cellColIndex = parseInt(cellColIndex);
         
-        if (board.grid[cellRowIndex][cellColIndex] === "b"|| board.grid[cellRowIndex][cellColIndex] === "w"){
+        if (board.grid[cellRowIndex][cellColIndex] === "r"|| board.grid[cellRowIndex][cellColIndex] === "b"){
             toggleLight(cellIndex);                                 //toggle clicked on cell
         }
     }
