@@ -1,7 +1,7 @@
 {
   "main.css": "/crackergame.github.io/static/css/main.6cea8305.chunk.css",
-  "main.js": "/crackergame.github.io/static/js/main.e41ba245.chunk.js",
-  "main.js.map": "/crackergame.github.io/static/js/main.e41ba245.chunk.js.map",
+  "main.js": "/crackergame.github.io/static/js/main.32a2f8fb.chunk.js",
+  "main.js.map": "/crackergame.github.io/static/js/main.32a2f8fb.chunk.js.map",
   "static/js/1.002a2879.chunk.js": "/crackergame.github.io/static/js/1.002a2879.chunk.js",
   "static/js/1.002a2879.chunk.js.map": "/crackergame.github.io/static/js/1.002a2879.chunk.js.map",
   "static/js/2.4a2a2248.chunk.js": "/crackergame.github.io/static/js/2.4a2a2248.chunk.js",
@@ -10,6 +10,6 @@
   "runtime~main.js.map": "/crackergame.github.io/static/js/runtime~main.05960aa8.js.map",
   "static/css/main.6cea8305.chunk.css.map": "/crackergame.github.io/static/css/main.6cea8305.chunk.css.map",
   "index.html": "/crackergame.github.io/index.html",
-  "precache-manifest.6ebae0c3b1ae1b3d96dbadb98b5af7fe.js": "/crackergame.github.io/precache-manifest.6ebae0c3b1ae1b3d96dbadb98b5af7fe.js",
+  "precache-manifest.bfbd4a3029a1fe9a5b39a8a10e4daa7c.js": "/crackergame.github.io/precache-manifest.bfbd4a3029a1fe9a5b39a8a10e4daa7c.js",
   "service-worker.js": "/crackergame.github.io/service-worker.js"
 }

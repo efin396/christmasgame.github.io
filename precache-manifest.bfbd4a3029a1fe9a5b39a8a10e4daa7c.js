@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "e41ba24565053c08094a",
+    "revision": "32a2f8fbeeb688a1b1c6",
     "url": "/crackergame.github.io/static/css/main.6cea8305.chunk.css"
   },
   {
-    "revision": "e41ba24565053c08094a",
-    "url": "/crackergame.github.io/static/js/main.e41ba245.chunk.js"
+    "revision": "32a2f8fbeeb688a1b1c6",
+    "url": "/crackergame.github.io/static/js/main.32a2f8fb.chunk.js"
   },
   {
     "revision": "002a2879119e0b5d31fb",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/crackergame.github.io/static/js/runtime~main.05960aa8.js"
   },
   {
-    "revision": "89b840f02c5b9e8a8842ff7bf0ffa72b",
+    "revision": "360f49353c6546b2ed1823758be04ba4",
     "url": "/crackergame.github.io/index.html"
   }
 ];

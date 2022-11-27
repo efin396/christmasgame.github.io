@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/crackergame.github.io/precache-manifest.6ebae0c3b1ae1b3d96dbadb98b5af7fe.js"
+  "/crackergame.github.io/precache-manifest.bfbd4a3029a1fe9a5b39a8a10e4daa7c.js"
 );
 
 workbox.clientsClaim();
