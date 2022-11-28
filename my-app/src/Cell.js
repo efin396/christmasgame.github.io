@@ -2,16 +2,16 @@ import React from "react";
 import './Cell.css';
 
 function Cell(props){
-    const { cellIndex, isOn, toggleLight } = props;
+    const { cellIndex, isOn, getSelections } = props;
 
     function handleToggleLight() {
-        toggleLight(cellIndex);
+        getSelections(cellIndex);
         
     }
 
     return (
         <button 
-            className={isOn === "b"?"Cell-b":isOn === "w"? "Cell-w":isOn === "s"? "options": "Cell-off"} 
+            className={isOn === "r"?"Cell-r":isOn === "b"? "Cell-b":isOn === "s"? "options": "Cell-off"} 
             onClick={handleToggleLight}
         ></button>
     );

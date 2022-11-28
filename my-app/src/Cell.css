@@ -1,6 +1,6 @@
-.Cell-w {
-    width: 25px;
-    height: 25px;
+.Cell-b {
+    width: 50px;
+    height: 50px;
 
     border-radius: 50%;
 
@@ -16,9 +16,9 @@
 
 }
 
-.Cell-b {
-    width: 25px;
-    height: 25px;
+.Cell-r {
+    width: 50px;
+    height: 50px;
 
     border-radius: 50%;
 
@@ -34,8 +34,8 @@
 }
 
 
-.options{   width: 25px;
-    height: 25px;
+.options{   width: 50px;
+    height: 50px;
     border-radius: 50%;
     
     border: none;
@@ -52,8 +52,8 @@
 }
 
 .Cell-off {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     
     border: none;
