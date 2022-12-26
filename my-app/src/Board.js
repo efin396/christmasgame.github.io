@@ -27,7 +27,7 @@ function Board(props) {
         const newPlayer= !player;
         setPlayer(newPlayer);
       }
-    /** toggleLight: toggles a single light on/off in the state */
+    /** getSelections: shows potential moves for a given chip */
     const getSelections = function(cellIndex){
         let [ cellRowIndex, cellColIndex ] = cellIndex.split("");
         cellRowIndex = parseInt(cellRowIndex);
@@ -58,22 +58,6 @@ function Board(props) {
         if (board.grid[cellRowIndex][cellColIndex+1] === "+"){
             board.grid[cellRowIndex][cellColIndex+1] = "s"
         }} catch(TypeError){}
-        try{
-        if (board.grid[cellRowIndex+1][cellColIndex+1] === "+"){
-            board.grid[cellRowIndex+1][cellColIndex+1] = "s"
-        }} catch(TypeError){}
-        try{
-        if (board.grid[cellRowIndex+1][cellColIndex-1] === "+"){
-            board.grid[cellRowIndex+1][cellColIndex-1] = "s"
-        }} catch(TypeError){}
-        try{
-        if (board.grid[cellRowIndex-1][cellColIndex+1] === "+"){
-            board.grid[cellRowIndex-1][cellColIndex+1] = "s"
-        }} catch(TypeError){}
-        try{
-        if (board.grid[cellRowIndex-1][cellColIndex-1] === "+"){
-            board.grid[cellRowIndex-1][cellColIndex-1] = "s"
-        }} catch(TypeError){}
         setBoard(currSt => (
             {   ...currSt,
                 grid: currSt.grid
@@ -103,8 +87,8 @@ function Board(props) {
 
         }
     function checkPoints(){
-        let bluePoint = ['+bbr', '+brb','+rbb', 'bbr+', 'brb+', '+rbb', 'rbb+']
-        let redPoint = ['+rrb', '+rbr','+brr', 'rrb+', 'rbr+', '+brr', 'brr+']
+        let bluePoint = ['+bbr','+rbb', 'bbr+', '+rbb', 'rbb+']
+        let redPoint = ['+rrb','+brr', 'rrb+', '+brr', 'brr+']
         for (let i=0; i < 4; i++){
             let row = board.grid[i][0]+board.grid[i][1]+board.grid[i][2]+board.grid[i][3]
             let col = board.grid[0][i]+board.grid[1][i]+board.grid[2][i]+board.grid[3][i]
@@ -185,6 +169,7 @@ function Board(props) {
     
     const gridDisplay = board.grid.map( function (row, rowIndex) {
             return (
+                
                 <div className="Board-row" key={rowIndex}>
                     {row.map((col, colIndex) => (
                         <Cell 
@@ -195,12 +180,16 @@ function Board(props) {
                          />
                     ))}
                 </div>
+                
+
             );
         });
+    
 
     return(
         <div className="Board">
            {hasWon() === "red"? <div className="Board-hasWon">Congratulations Red Won!</div> : hasWon() === "blue"? <div className="Board-hasWon">Congratulations Blue Won!</div>: gridDisplay }
+           <h1 className='App-h1'><span className="App-blue">Score Board</span></h1>
         </div>
     );
 
